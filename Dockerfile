@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM --platform=linux/arm64 ubuntu:20.04
 LABEL maintainer="Sasha Gerrand <github+docker-glibc-builder@sgerrand.com>"
 ENV DEBIAN_FRONTEND=noninteractive \
     GLIBC_VERSION=2.32 \
